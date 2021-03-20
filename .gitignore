@@ -25,6 +25,8 @@ user/accounts/*
 #!user/config/.*
 user/data/*
 !user/data/.*
+user/pages/*
+!user/pages/.*
 #user/plugins/*
 #!user/plugins/.*
 #user/themes/*
