@@ -29,42 +29,38 @@
                     <p>
                         <ul style="padding-left:40px">
                             {% for bullet in item.list %}
-                            <li class="bulletlist"> {{ bullet }} </li>
+                            <li style="list-style-type:disc"> {{ bullet }} </li>
                             {% endfor %}
                         </ul>
                     </p>
                     {% endif %}
 
-                    {% if item.areas %}
-                    <p>
                     <div style="overflow-x:auto">
-                        <table class="areas">
-                            {% for area in item.areas %}
-                            <tr>
-                                <td> {{ area.1 }} </td>
-                                <td> {{ area.2 }} </td>
-                                <td> {{ area.3 }} </td>
-                            </tr>
-                            {% endfor %}
-                        </table>
-                        </div>
-                    </p>
-                    {% endif %}
+                        <p>
+                            {% if item.areas %}
+                            <table>
+                                {% for area in item.areas %}
+                                <tr>
+                                    <td> {{ area.1 }} </td>
+                                    <td> {{ area.2 }} </td>
+                                    <td> {{ area.3 }} </td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                            {% endif %}
 
-                    {% if item.cores %}
-                    <p>
-                    <div style="overflow-x:auto">
-                        <table class="cores">
-                        {% for core in item.cores %}
-                        <tr>
-                            <td><b> {{ core.1 }} </b></td>
-                            <td> {{ core.2 }} </td>
-                        </tr>
-                        {% endfor %}
-                        </table>
-                        </div>
-                    </p>
-                    {% endif %}
+                            {% if item.cores %}
+                            <table>
+                                {% for core in item.cores %}
+                                <tr>
+                                    <td><b> {{ core.1 }} </b></td>
+                                    <td> {{ core.2 }} </td>
+                                </tr>
+                                {% endfor %}
+                            </table>
+                            {% endif %}
+                        </p>
+                    </div>
 
                     {% if item.skills %}
                     <div class="bars">

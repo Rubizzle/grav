@@ -17,8 +17,8 @@ cache/*
 #!assets/.*
 logs/*
 !logs/.*
-#images/*
-#!images/.*
+images/*
+!images/.*
 user/accounts/*
 !user/accounts/.*
 #user/config/*

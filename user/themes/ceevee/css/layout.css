@@ -281,21 +281,15 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /*----------------------------------------------*/
-/*	Skill Tables
+/*	Skill Tables (mobile view)
 /*----------------------------------------------*/
 
-.areas {
-    width: 100%;
-    min-width: 550px;
+#resume tr {
+   white-space: nowrap;
 }
 
-.cores {
-    width: 100%;
-    min-width: 200px;
-}
-
-.bulletlist {
-   list-style-type:disc;
+#resume td {
+   padding-right: 25px;
 }
 
 /*----------------------------------------------*/
